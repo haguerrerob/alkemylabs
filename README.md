@@ -1,2 +1,2 @@
-# alkemylabs
+# expenses-app
 Alkemy Challenger Repository
