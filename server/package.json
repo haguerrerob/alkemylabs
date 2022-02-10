@@ -1,0 +1,34 @@
+{
+  "name": "alkemy-challenger",
+  "version": "1.0.0",
+  "description": "Alkemy Challenger FullStack-JS",
+  "main": "index.js",
+  "scripts": {
+    "babel-node": "babel-node",
+    "dev": "nodemon --exec npm run babel-node -- src/index.js",
+    "start": "node dist/index.js",
+    "build": "babel src --out-dir dist",
+    "test": "scripts test",
+    "eject": "scripts eject"
+  },
+  "keywords": [],
+  "author": "Armando Guerrero",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.0",
+    "@babel/node": "^7.16.8",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "nodemon": "^2.0.15"
+  }
+}
