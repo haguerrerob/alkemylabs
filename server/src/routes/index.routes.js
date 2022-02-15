@@ -1,13 +1,13 @@
 import { Router } from "express";
-import pool from "../db";
+
+import usersRouter from "./users.routes";
+import incomesRouter from "./incomes.routes";
+import expensesRouter from "./expenses.routes";
 
 const router = Router();
 
-router.get("/prueba", async (req, res) => {
-  const result = await pool.query("SELECT NOW()");
-  console.log(result.rows[0]);
-  res.json("executed");
-  // pool.end();
-});
+router.use("/users", usersRouter);
+router.use("/incomes", incomesRouter);
+router.use("/expenses", expensesRouter);
 
 export default router;
